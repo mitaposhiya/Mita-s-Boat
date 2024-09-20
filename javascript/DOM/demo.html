@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>demo of js</title>
+    </head>
+    <body style="background-color: blanchedalmond; color: brown;">
+        <div class="parent">
+        <div class="day">monday</div>
+        <div class="day">tuesday</div>
+        <div class="day">wednesday</div>
+        <div class="day">thursday</div>
+        <div class="day">friday</div>
+        </div>
+        <ul class="language">
+          <li>javascript</li>
+        </ul>
+        <div class="button">
+        <input type="button" id="button" value="click">
+        </div>
+    </body>
+    <script>
+                //    const parent = document.querySelector('.parent')
+                //    console.log(parent);
+                //    console.log(parent.children);
+                //    console.log(parent.children[1].innerHTML);
+
+                // for(let i=0;i<parent.children.length; i++)
+                // {
+                //     console.log(parent.children[i].innerHTML);
+                // }
+                // parent.children[0].style.color = "red"
+                // console.log(parent.firstElementChild);
+
+
+                // const div =document.createElement('div')//create element and add classname ,id and append in body
+                // console.log(div);
+                // div.className="parent";
+                // div.id="child";
+                // div.setAttribute('title',"heading");
+                // div.style.backgroundColor =" black";
+
+                // const addtext = document.createTextNode("chai jijck"); 
+                // div.appendChild(addtext);
+                // document.body.appendChild(div);
+
+
+            //   function addlanguage(langname){//complex for large data
+            //     const li=document.createElement('li');
+            //     li.innerHTML=`${langname}`;
+            //     document.querySelector('.language').appendChild(li);
+
+            //   }
+            //   addlanguage ("python")
+            //   addlanguage ("php")
+
+            function addoptlanguage (langname){//htis is optimication way
+                const li=document.createElement('li');
+                li.appendChild(document.createTextNode(langname))
+                document.querySelector('.language').appendChild(li)
+
+            }
+            addoptlanguage('r');
+            addoptlanguage('r');
+            
+            //add in list 
+            const slanguage= document.querySelector("li:nth-child(2)");
+            const newli=document.createElement('li');
+            newli.textContent ="mojo";
+            slanguage.replaceWith(newli);
+
+
+            const firstlang =document.querySelector("li:first-child");
+            firstlang.outerHTML='<li>typescript</li>';
+           
+
+            //remove
+
+            const lastlang=document.querySelector("li:last-child")
+            lastlang.remove()
+
+           document.getElementById('button').addEventListener('click',function()
+        {
+            alert("click again")
+        },false)// we took false mean bubbling :inner to outer
+        e.stopPrppagation()//event cant bubbling
+       // if we took true mean capturing: outer to inner
+        // type,timestamp,defaultprevented,target ,toelement,srcelement,currenttarget,scrren ,clientx,clilenty,altkey,ctrlkey,keycode
+    </script>
+
+ 
+</html>
