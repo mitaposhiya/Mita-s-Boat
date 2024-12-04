@@ -1,0 +1,127 @@
+body {
+    display: inline-block;
+    font: center;
+    margin-left: 25%;
+    padding: 30px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form {
+    width: 200%;
+}
+
+h1 {
+
+    border: 2px rgb(170, 168, 168) solid;
+    border-radius: 7px;
+    display: block;
+    padding: 30px;
+    width: 180%;
+    background-color: rgb(163, 163, 163);
+
+}
+
+body div {
+    border: 2px rgb(170, 168, 168) solid;
+    border-radius: 7px;
+    display: block;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+
+.name input {
+    box-sizing: border-box;
+    border: 2px dotted #ccc;
+    border-radius: 4px;
+    width: 50%;
+    padding: 7px;
+}
+
+.name input:hover {
+    background-color: white;
+}
+
+.phone input {
+    box-sizing: border-box;
+    border: 2px dotted #ccc;
+    border-radius: 4px;
+    width: 50%;
+    padding: 7px;
+}
+
+.phone input:hover {
+    background-color: white;
+}
+
+
+
+i {
+    color: rgb(223, 17, 17);
+}
+
+.email input {
+    box-sizing: border-box;
+    border: 2px dotted #ccc;
+    border-radius: 4px;
+    width: 50%;
+    padding: 7px;
+}
+
+.email input:hover {
+    background-color: white;
+}
+
+.address textarea {
+
+    width: 100%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px dotted #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+
+}
+
+.address textarea:hover {
+    background-color: white;
+}
+
+.city select {
+    box-sizing: border-box;
+    border: 2px dotted #ccc;
+    border-radius: 4px;
+    width: 50%;
+    padding: 7px;
+}
+
+.image input {
+    box-sizing: border-box;
+    border: 2px dotted #ccc;
+    border-radius: 4px;
+    width: 50%;
+    padding: 7px;
+}
+
+.image input:hover {
+    background-color: white;
+}
+
+button {
+    width: 15%;
+    padding: 10px;
+    background-color: grey;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: rgb(68, 67, 67);
+}
